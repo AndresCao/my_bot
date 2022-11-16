@@ -19,21 +19,21 @@
     </material>
 
 
-    <<link name="base_link">
+    <link name="base_link">
         
     </link>
 
-    <<joint name="chassis_joint" type="fixed">
-        <<parent link="base_link"/>
-        <child link="chassis"/>
-        <<origin xyz="-0.1 0 0"/>
+    <joint name="chassis_joint" type="fixed">
+        <parent link="base_link"/>
+        child link="chassis"/>
+        <origin xyz="-0.1 0 0"/>
     </joint>
 
     <link name="chassis">
         <visual>
             <origin xyz="0.15 0 0.075">
             <geometry>
-                <<box size="0.3 0.3 0.15"/>
+                <box size="0.3 0.3 0.15"/>
             </geometry>
             <material name="white"/>
         </visual>
