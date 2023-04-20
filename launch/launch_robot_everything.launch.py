@@ -28,8 +28,15 @@ def generate_launch_description():
                 get_package_share_directory('my_bot'),
                 'launch/rplidar.launch.py'))
     )
+    launch_camera = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('my_bot'),
+                'launch/camera.launch.py'))
+    )
     return LaunchDescription([
 
         launch_robot,
         launch_rplidar,
+        launch_camera,
     ])

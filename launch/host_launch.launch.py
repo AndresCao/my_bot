@@ -34,16 +34,9 @@ def generate_launch_description():
                 get_package_share_directory('my_bot'),
                 'launch/navigation_launch.py'))
     )
-    launch_camera = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(
-                get_package_share_directory('my_bot'),
-                'launch/camera.launch.py'))
-    )
     return LaunchDescription([
 
         launch_joy,
         launch_map,
         launch_nav,
-        launch_camera,
     ])
