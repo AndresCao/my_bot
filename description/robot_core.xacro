@@ -6,7 +6,7 @@
 
     <xacro:property name="chassis_length" value="0.3048"/>
     <xacro:property name="chassis_width" value="0.3048"/>
-    <xacro:property name="chassis_height" value="0.100"/>
+    <xacro:property name="chassis_height" value="0.010"/>
     <xacro:property name="chassis_mass" value="1.0"/>
     <xacro:property name="wheel_radius" value="0.033"/>
     <xacro:property name="wheel_thickness" value="0.026"/>
